@@ -1,0 +1,30 @@
+.sidebar{
+    float: right;
+    display: inline-flex;
+    .sidebar-links{
+        .btn-vk{
+            background: $vk;
+            color: $white;
+            :hover{
+                background: $vk-hover;
+                color: $white;
+            }
+        }
+        .btn-telegram{
+            background: $telegram;
+            color: $white;
+            :hover{
+                background: $telegram-hover;
+                color: $white;
+            }
+        }
+        .btn-youtube{
+            background: $youtube;
+            color: $white;
+            :hover{
+                background: $youtube-hover;
+                color: $white;
+            }
+        }
+    }
+}
