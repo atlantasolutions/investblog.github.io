@@ -1,8 +1,10 @@
 $blue: #0167FF;
-$blue-hover: darken($blue, 5%);
+$blue-hover: darken($blue, 20%);
 
 $white: #FFFFFF;
 $dark: #212121;
+$grey: #535353;
+$navy-dark: #000B1C;
 
 //social colors
 $telegram: #0088CC;
@@ -14,3 +16,7 @@ $vk-hover: darken($vk, 5%);
 $youtube: #FF0000;
 $youtube-hover: darken($youtube, 5%);
 
+$skype: #00aff0;
+$skype-hover: darken($skype, 5%);
+
+$transition-time: 0.5s;
