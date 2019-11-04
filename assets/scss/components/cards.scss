@@ -1,0 +1,46 @@
+.card{
+    position: relative;
+    img{
+        border-radius: 16px;
+        width: 100%;
+    }
+    .card-heading{
+        color: $white;
+        position: absolute;
+        top: 180px;
+        left: 20px;
+        width: 70%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .card-overlay{
+        position: absolute;
+        background: rgba(1, 103, 255, 0.5);
+        z-index: 8000;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 16px;
+    }
+    .card-meta{
+        display: inline;
+        .card-time,
+        .card-category{
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: transparentize($white, .5);
+            :after{
+                content: '\00B7';
+                font-weight: 600;
+            }
+        }
+        
+    }
+
+
+}

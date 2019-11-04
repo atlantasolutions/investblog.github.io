@@ -1,4 +1,21 @@
 .btn{
-    padding: 10px 40px !important;
-    border-radius: 16px !important;
+    padding: 10px 40px;
+    border-radius: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    .btn-regular{
+        background: $blue;
+        color: $white;
+    }
+    .btn-info{
+        background: $white;
+        color: $blue
+    }
+    .btn-outline{
+        border: 3px solid $blue;
+        border-radius: 30px;
+        color: $blue;
+    }
 }
+

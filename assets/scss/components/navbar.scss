@@ -1,0 +1,29 @@
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: $white;
+    margin-top: 35px;
+     .navbar-menu ul{
+        list-style: none;
+        display: inline;
+         .navbar-item li{
+            .active{
+                color: $blue;
+                font-weight: 700;
+            }
+            a .navbar-link{
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: 600;
+                color: $dark;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.navbar-priceticker{
+    position: fixed;
+}

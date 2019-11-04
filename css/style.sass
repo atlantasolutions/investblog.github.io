@@ -1,4 +1,6 @@
+    
 body
+    font-family: 'Montserrat', sans-serif
     padding: 0
     margin: 0
 .container
@@ -7,13 +9,24 @@ body
     display: flex
     justify-content: space-between
 
+//Overrides
+.btn-outline 
+  border: 3px solid #0167FF
+  color: #0167FF
+  padding: 14px 28px
+  border-radius: 30px
+  font-size: 16px
+  font-weight: 600
+  cursor: pointer
+
+
 .header--bitcoin
     height: 50px
     background: #212121
     line-height: 50px
 
 .header--nav
-    height: 100px
+    height: 60px
     .logo
         background: url('data:image/png;base64,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')
         background-repeat: no-repeat
@@ -23,6 +36,7 @@ body
         display: flex
         .menu__link
             list-style: none
+            margin: 10px
     .container--icon
         display: flex 
         align-items: center
@@ -51,15 +65,16 @@ body
             text-decoration: none
         .title__text
             margin-left: 25px
+            text-transform: uppercase
+            font-size: 21px
         .title__news
             margin-right: 25px
         .flex
             display: flex
-            margin-top: 25px
+            margin-top: 20px
         .block
             position: relative
-            margin-left: 25px
-            margin-right: 30px
+            margin: 0px 10px
             img
                 border-radius: 15px
                 width: 100%
@@ -92,8 +107,7 @@ body
                 border-radius: 60px
         .item
             position: relative
-            margin-left: 25px
-            margin-right: 5px
+            margin: 0px 10px
             img 
                 width: 100%
                 border-radius: 16px
@@ -133,3 +147,24 @@ body
         .image__ad
             margin-left: 25px
             width: 60%
+
+
+
+     .navbar
+        position: fixed
+        height: 60px
+        background: #ffffff
+         .navbar-menu
+            list-style: none
+            display: inline
+             .navbar-item
+                .active
+                    color: #0167FF
+                    font-weight: 700
+                 .navbar-link
+                    text-transform: uppercase
+                    text-decoration: none
+                    font-weight: 600
+                    color: #212121
+                    font-size: 16px
+
