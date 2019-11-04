@@ -130,6 +130,11 @@
     margin-left: 2%;
   }
 }
+@media (max-width: 768px) {
+  div[class*=grid] {
+    display: flex;
+  }
+}
 body {
   font-family: "Montserrat", sans-serif;
   padding: 0;
@@ -169,6 +174,21 @@ h1, h2, h3 {
   transition: 0.5s;
 }
 
+.btn-block {
+  width: 100%;
+  border-radius: 16px;
+  padding: 20px 0px;
+  text-align: center;
+  margin: 10px 0px;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: 0.5s;
+  font-weight: 700;
+}
+.btn-block:first-child {
+  margin-top: 0px !important;
+}
+
 .btn-regular {
   background: #0167FF;
   color: #FFFFFF;
@@ -192,32 +212,57 @@ h1, h2, h3 {
   color: #FFFFFF;
 }
 
-.sidebar {
-  display: inline-flex;
-}
-.sidebar .sidebar-links .btn-vk {
+.btn-vk {
   background: #4C75A3;
-  color: #FFFFFF;
 }
-.sidebar .sidebar-links .btn-vk :hover {
+.btn-vk:hover {
   background: #446992;
-  color: #FFFFFF;
 }
-.sidebar .sidebar-links .btn-telegram {
-  background: #0088CC;
-  color: #FFFFFF;
-}
-.sidebar .sidebar-links .btn-telegram :hover {
-  background: #0077b3;
-  color: #FFFFFF;
-}
-.sidebar .sidebar-links .btn-youtube {
+
+.btn-yt {
   background: #FF0000;
-  color: #FFFFFF;
 }
-.sidebar .sidebar-links .btn-youtube :hover {
+.btn-yt:hover {
   background: #e60000;
-  color: #FFFFFF;
+}
+
+.btn-tg {
+  background: #0088CC;
+}
+.btn-tg:hover {
+  background: #0077b3;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.sidebar .aside-social-block {
+  display: inline-grid;
+  width: 100%;
+}
+
+.aside {
+  display: flow-root;
+  padding: 20px;
+}
+.aside ul {
+  list-style: none;
+  display: inline;
+}
+.aside ul li .project-item {
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+.aside ul .project-item-title {
+  font-weight: 400;
+  color: #212121;
+}
+.aside ul .project-item-price {
+  font-weight: 700;
+  color: #0167FF;
 }
 
 header {
@@ -452,10 +497,11 @@ nav ul li a:active {
   margin-left: 0px !important;
   margin-top: 20px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .articles-meta {
-  display: inline-flex;
+  display: flex;
   margin-top: 10px;
 }
 
@@ -466,10 +512,13 @@ nav ul li a:active {
 .articles-link {
   line-height: 27px;
   text-transform: uppercase;
+  margin-left: auto;
 }
 
 .article-alternate-meta {
-  display: inline-flex;
+  display: flex;
+  height: 40px;
+  align-items: center;
 }
 .article-alternate-meta .article-alternate-avatar {
   width: 40px;
@@ -484,7 +533,7 @@ nav ul li a:active {
   font-weight: 400;
   font-size: 12px;
   color: #535353;
-  float: right;
+  margin-left: auto;
 }
 
 footer {
