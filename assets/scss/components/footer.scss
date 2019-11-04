@@ -1,0 +1,75 @@
+footer{
+    background: $navy-dark;
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+}
+
+footer{
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+footer{
+    h4{
+        text-transform: uppercase;
+        color:$white!important;
+    }
+    ul{
+        list-style: none;
+        li{
+            margin:20px 0px;
+        }
+        li a{
+            text-transform: uppercase;
+            color: $blue;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            &:hover{
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.footer{ 
+    display: flex;
+}
+
+.social-block{
+    ul {
+        list-style: none;
+        display: flex;
+        li{
+            margin: 0px 20px;
+        }
+    }
+    .fab{
+        color: transparentize($white,.9);
+        font-size: 32px;
+        transition: $transition-time;
+    }
+
+    .fa-telegram-plane:hover{
+        color: $telegram;
+    }
+
+    .fa-vk:hover{
+        color: $vk;
+    }
+
+    .fa-youtube:hover{
+        color: $youtube;
+    }
+
+    .fa-skype:hover{
+        color: $skype;
+    }
+
+    .footer-updates{
+        margin: 40px 0px;
+    }
+
+}

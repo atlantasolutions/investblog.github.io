@@ -1,0 +1,55 @@
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+
+.row {
+  display: block;
+  margin: 0;
+  //provide padding for small screens
+  padding: 0 1.5em;
+  width: 100%;
+  
+  @media (min-width: 37.5em) {
+    //add spacing between stacked  rows
+    margin: 1em 0;
+    //large screen padding
+    padding: 0 2.5em;
+  }
+   
+}
+
+//grid mixin
+$col-width    : 65px;
+$gutter-width : 20px;
+$columns      : 12;
+
+@for $i from 1 through $columns {
+
+    // Set container width relative to user variables
+    $width: ($col-width * $columns) + ($gutter-width * ($columns - 1));
+
+    // First, calculate grid size in pixels
+    $grid: ($col-width * $i) + ($gutter-width * ($i - 1));
+
+    // Then, calculate the responsive grid 
+    $grid: ($grid / $width) * 100%;
+
+    // Generate the grid classes
+    .grid-#{$i} {
+        width: 100%;
+        @media(min-width: 37.5em) {
+            width: $grid;
+        }
+    }
+}
+
+@media(min-width: 37.5em) {
+    div[class*="grid"] + div[class*="grid"] {
+        margin-left: 2%;
+    }
+}

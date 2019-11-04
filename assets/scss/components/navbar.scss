@@ -1,0 +1,53 @@
+
+header{
+    justify-content: space-evenly;
+    margin-top:37px;
+    padding: 10px 0px;
+    position: fixed;
+    z-index: 1;
+}
+
+nav {
+    overflow: hidden;
+    background-color: $white;
+    position: fixed;
+    display: inline-flex;
+    justify-content: space-evenly;
+    top: 0;
+    width: 100%;
+    padding: 10px 0px;
+    ul {
+      text-align: center;
+      list-style-type: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 15px;
+      li {
+        display: inline;
+        font-size: 17px;
+
+        a {
+          color: $dark;
+          text-decoration: none;
+          padding: 14px;
+          .active{
+            font-weight: 600;
+            color: $blue;
+        }
+          &:hover {
+            color: $blue;
+          }
+          &:active{
+              color: $blue;
+              font-weight: 600;
+          }
+
+        }
+      }
+    }
+  }
+
+.ticker{
+    position: fixed;
+    top:0px;
+}
