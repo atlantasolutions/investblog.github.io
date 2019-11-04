@@ -9,6 +9,22 @@
     transition: $transition-time;
 }
 
+.btn-block{
+    width:100%;
+    border-radius: 16px;
+    padding: 20px 0px;
+    text-align: center;
+    margin: 10px 0px;
+    color: $white;
+    text-decoration: none;
+    transition: $transition-time;
+    font-weight: 700;
+    &:first-child{
+        margin-top:0px!important;
+    }
+}
+
+
 .btn-regular{
     background: $blue;
     color: $white;
@@ -30,3 +46,23 @@
     }
 }
 
+.btn-vk{
+    background: $vk;
+    &:hover{
+        background: $vk-hover;
+    }
+}
+
+.btn-yt{
+    background: $youtube;
+    &:hover{
+        background: $youtube-hover;
+    }
+}
+
+.btn-tg{
+    background: $telegram;
+    &:hover{
+        background: $telegram-hover;
+    }
+}
