@@ -18,7 +18,7 @@
 
 .articles-meta{
     display: flex;
-    margin-top: 10px;
+    margin-top: 40px 0px;
 
 }
 
@@ -43,6 +43,7 @@ p{
 .article-alternate-meta{
     display: flex;
     height: 40px;
+    margin-top: 20px;
     align-items: center;
     .article-alternate-avatar{
         width: 40px;
@@ -52,6 +53,7 @@ p{
         text-transform: uppercase;
         font-weight: 700;
         font-size: 16px;
+        margin-left: 20px;
     }
     .article-alternate-time{
         font-weight: 400;

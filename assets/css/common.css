@@ -562,7 +562,7 @@ nav ul li a:active {
 
 .articles-meta {
   display: flex;
-  margin-top: 10px;
+  margin-top: 40px 0px;
 }
 
 .articles-heading {
@@ -582,6 +582,7 @@ p {
 .article-alternate-meta {
   display: flex;
   height: 40px;
+  margin-top: 20px;
   align-items: center;
 }
 .article-alternate-meta .article-alternate-avatar {
@@ -592,12 +593,20 @@ p {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
+  margin-left: 20px;
 }
 .article-alternate-meta .article-alternate-time {
   font-weight: 400;
   font-size: 12px;
   color: #535353;
   margin-left: auto;
+}
+
+.post img {
+  width: 100%;
+}
+.post p {
+  margin: 40px 0px;
 }
 
 footer {
