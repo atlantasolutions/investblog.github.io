@@ -2,28 +2,36 @@
     .aside-social-block{
         display: inline-grid;
         width: 100%;
+        
     }
+    margin-left: 40px;
+    margin-top: 20px;
 }
 
 .aside{
     display: flow-root;
     padding: 20px;
+
     ul{
         list-style: none;
         display: inline;
-        li .project-item{
+        li{
+            margin:20px 0px;
+        }
+        .project-item{
             display: flex;
-            height: 40px;
             align-items: center;
         }
         
         .project-item-title{
             font-weight: 400;
             color: $dark;
+            margin-left:10px;
         }
         .project-item-price{
             font-weight: 700;
             color:$blue;
+            margin-left: auto;
         }
         
     }

@@ -12,11 +12,12 @@
   .card {
     font-family: 'Montserrat', sans-serif;
     --bg-filter-opacity: 0.5;
-    background: red;
+    // background: red;
+    background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
     height: 20em;
     width: 100%;
     font-size: 1.5em;
-    color: white;
+    color: $white;
     border-radius: 1em;
     padding: 1em;
     /*margin: 2em;*/
@@ -33,12 +34,15 @@
   
   .card:hover {
     transform: rotate(0);
+    background: $blue;
+    color: $white;
   }
   
-  .card h1 {
+  .card h3 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 1.2em;
+    color: $white;
   }
   
   .card p {
@@ -46,6 +50,7 @@
     font-family: 'Montserrat',sans-serif;
     margin-top: 0.5em;
     line-height: 2em;
+    color: $white;
   }
   
   .card .tags {
@@ -91,13 +96,14 @@
   }
   
   .card:before {
-    background: #ddd;
+    background: $blue-hover;
     width: 250%;
     height: 250%;
   }
   
   .card:after {
-    background: white;
+    background: $blue;
+    color: $white;
     width: 200%;
     height: 200%;
   }
