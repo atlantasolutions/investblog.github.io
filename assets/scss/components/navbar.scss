@@ -23,8 +23,10 @@ nav {
       margin: 0;
       padding: 15px;
       li {
+        text-transform: uppercase;
         display: inline;
         font-size: 17px;
+        font-weight: 700;
 
         a {
           color: $dark;

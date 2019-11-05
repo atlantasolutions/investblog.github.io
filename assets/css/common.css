@@ -339,8 +339,10 @@ nav ul {
   padding: 15px;
 }
 nav ul li {
+  text-transform: uppercase;
   display: inline;
   font-size: 17px;
+  font-weight: 700;
 }
 nav ul li a {
   color: #212121;
