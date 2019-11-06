@@ -16,7 +16,7 @@
     background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
     height: 16em;
     width: 100%;
-    font-size: 1.5em;
+    font-size: 18px;
     color: $white;
     border-radius: 1em;
     padding: 1em;
@@ -47,9 +47,19 @@
   
   .card h3 {
     margin: 0;
-    font-size: 1.2em;
-    line-height: 1.2em;
+    font-size: 26px;
+    line-height: 38px;
+    font-weight: 600;
     color: $white;
+  }
+
+  .card h4 {
+    margin: 0;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 600;
+    color: $white;
+    margin-block-start: 10px;
   }
   
   .card p {
@@ -209,4 +219,8 @@
   .cards-views{
     margin-left: 20px;
   }
+}
+
+.card-meta{
+  margin-bottom: 20px;
 }
