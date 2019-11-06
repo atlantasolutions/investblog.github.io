@@ -505,10 +505,12 @@ nav ul li a:active {
 .card .tags {
   display: flex;
   text-transform: uppercase;
+  margin-top: 6px;
 }
 
 .card .tags .tag, .card .tags .post-date {
   font-size: 0.75em;
+  color: #FFFFFF;
   font-weight: 700;
   opacity: 0.6;
   border-radius: 0.3rem;
@@ -632,6 +634,24 @@ nav ul li a:active {
     margin: 0;
   }
 }
+.cards-meta {
+  display: flex;
+  align-content: center;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+.cards-meta .cards-comments, .cards-meta .cards-views {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.cards-meta .cards-comments p, .cards-meta .cards-views p {
+  margin-left: 10px;
+}
+.cards-meta .cards-views {
+  margin-left: 20px;
+}
+
 .articles-all, .articles-newest {
   display: flex;
 }
