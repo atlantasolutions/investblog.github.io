@@ -190,8 +190,8 @@ body {
 
 main {
   margin-top: 80px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 90px;
+  margin-right: 90px;
 }
 
 .main-area {
@@ -350,9 +350,42 @@ h1, h2, h3 {
   text-align: center;
   margin-left: auto;
 }
+.aside .aside-comments-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+  display: block;
+}
+.aside .aside-comments-item .avatar {
+  width: 32px;
+  height: 32px;
+}
+.aside .aside-comments-item .comments-meta {
+  display: flex;
+  align-items: center;
+}
+.aside .aside-comments-item .comments-meta h4 {
+  margin-left: 20px;
+}
+.aside .aside-comments-item .comments-meta .comments-link {
+  text-decoration: none;
+  color: #0167FF;
+  font-size: 28px;
+  margin-left: auto;
+}
+.aside .aside-comments-item .comments-meta .comments-link:hover {
+  color: #003e9a;
+}
+.aside .aside-comments-item .comments-meta .comments-link:active {
+  color: #003e9a;
+}
+.aside .aside-comments-item .comments-meta .comments-link:visited {
+  color: #0167FF;
+}
 
 .projects-meta {
   display: flex;
+  align-items: center;
 }
 .projects-meta .project-price {
   margin-left: auto;

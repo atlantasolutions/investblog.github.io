@@ -61,12 +61,48 @@
             text-align: center;
             margin-left: auto;
         }
+
+       
+    }
+    .aside-comments-item{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        list-style: none;
+        display: block;
+        .avatar{
+            width: 32px;
+            height: 32px;
+        }
+        .item-text{}
+        .comments-meta{
+            display: flex;
+            align-items: center;
+            h4{
+                margin-left: 20px;
+            }
+            .comments-link{
+                text-decoration: none;
+                color: $blue;
+                font-size: 28px;
+                margin-left: auto;
+                &:hover{
+                    color: $blue-hover;
+                }
+                &:active{
+                    color: $blue-hover;
+                }
+                &:visited{
+                    color: $blue;
+                }
+            }
+        }
     }
 }
 
 
 .projects-meta{
     display: flex;
+    align-items: center;
     .project-price{
         margin-left: auto;
     }
