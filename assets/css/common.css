@@ -449,6 +449,11 @@ nav ul li a:active {
   color: #FFFFFF;
 }
 
+.card-item-income {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .card h3 {
   margin: 0;
   font-size: 1.2em;
@@ -466,9 +471,10 @@ nav ul li a:active {
 
 .card .tags {
   display: flex;
+  text-transform: uppercase;
 }
 
-.card .tags .tag {
+.card .tags .tag, .card .tags .post-date {
   font-size: 0.75em;
   font-weight: 700;
   opacity: 0.6;
@@ -481,6 +487,10 @@ nav ul li a:active {
 .card:hover .tags .tag {
   background: #0167FF;
   color: #FFFFFF;
+}
+
+.card .post-date {
+  margin-left: 20px;
 }
 
 .card .date {
