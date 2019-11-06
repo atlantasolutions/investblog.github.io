@@ -12,6 +12,7 @@
     display: flow-root;
     padding: 20px;
 
+
     ul{
 
         list-style: none;
@@ -22,6 +23,24 @@
         .project-item{
             display: flex;
             align-items: center;
+        }
+
+        .category-item-title{
+            text-decoration: none;
+            font-weight: 400;
+            color: $blue;
+            &:hover{
+                color: $blue-hover;
+                font-weight: 600;
+            }
+            &:active{
+                color: $blue-hover;
+                font-weight: 600; 
+            }
+            &:visited{
+                color: $blue-hover;
+                font-weight: 600; 
+            }
         }
         
         .project-item-title{
@@ -35,6 +54,21 @@
             margin-left: auto;
         }
         
+        .project-item-badge{
+            padding: 4px 18px;
+            border-radius: 300px;
+            font-weight: 700;
+            text-align: center;
+            margin-left: auto;
+        }
+    }
+}
+
+
+.projects-meta{
+    display: flex;
+    .project-price{
+        margin-left: auto;
     }
 }
 

@@ -14,7 +14,7 @@
     --bg-filter-opacity: 0.5;
     // background: red;
     background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
-    height: 20em;
+    height: 16em;
     width: 100%;
     font-size: 1.5em;
     color: $white;
@@ -59,9 +59,10 @@
   
   .card .tags .tag {
     font-size: 0.75em;
-    background: rgba(255,255,255,0.5);
+    // background: rgba(255,255,255,0.5);
+    font-weight: 700;
+    opacity: .6;
     border-radius: 0.3rem;
-    padding: 0 0.5em;
     margin-right: 0.5em;
     line-height: 1.5em;
     transition: all, $transition-time;

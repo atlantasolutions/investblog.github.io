@@ -14,12 +14,14 @@
 .artiles-all--container{
     display: flex;
     flex-direction: row;
+    margin: 0px 0px 50px 0px;
 }
 
 .articles-meta{
     display: flex;
     margin-top: 40px 0px;
-
+    margin-block-end: 1em;
+    
 }
 
 .articles-heading{
@@ -33,7 +35,20 @@ p{
 .articles-link{
     line-height: 27px;
     text-transform: uppercase;
+    text-decoration: none;
     margin-left: auto;
+    &:hover{
+        color: $blue-hover;
+        font-weight: 600;
+    }
+    &:active{
+        color: $blue-hover;
+        font-weight: 600; 
+    }
+    &:visited{
+        color: $blue-hover;
+        font-weight: 600; 
+    }
 }
 
 
@@ -57,5 +72,26 @@ p{
         font-size: 12px;
         color: $grey;
         margin-left: auto;
+    }
+    
+}
+
+.article-alternate-link a{
+    line-height: 27px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: auto;
+    color: $blue;
+    &:hover{
+        color: $blue-hover;
+        font-weight: 600;
+    }
+    &:active{
+        color: $blue-hover;
+        font-weight: 600; 
+    }
+    &:visited{
+        color: $blue-hover;
+        font-weight: 600; 
     }
 }

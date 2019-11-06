@@ -1,8 +1,10 @@
+$ad-color: #1B3756;
+
 body{
     font-family: 'Montserrat',sans-serif;
     padding: 0;
     margin: 0;
-    background: $blue;
+    background: $ad-color;
 }
 
 main{
@@ -13,6 +15,7 @@ main{
 
 .main-area{
     position: relative;
+    margin-top: 370px;
     padding: 10px;
     background: $white;
     border-radius: 18px 18px 0 0;
@@ -23,3 +26,12 @@ a{
     transition: $transition-time !important;
 }
 
+.badge-red{
+    background: transparentize($youtube, .5);
+    color: transparentize($youtube, .2); 
+}
+
+.badge-blue{
+    background: transparentize($blue, .5);
+    color: transparentize($blue, .2); 
+}
