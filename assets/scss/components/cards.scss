@@ -12,9 +12,9 @@
   .card {
     font-family: 'Montserrat', sans-serif;
     --bg-filter-opacity: 0.5;
-    // background: red;
-    background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
-    height: 16em;
+    background: red;
+    //background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
+    height: 369px;
     width: 100%;
     font-size: 18px;
     color: $white;
@@ -30,6 +30,10 @@
     position: relative;
     overflow: hidden;
     text-decoration: none;
+  }
+
+  .card--small{
+    height: 200px;
   }
   
   .card:hover {
@@ -51,6 +55,7 @@
     line-height: 38px;
     font-weight: 600;
     color: $white;
+    max-width: 70%;
   }
 
   .card h4 {
