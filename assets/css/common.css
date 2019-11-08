@@ -1152,6 +1152,194 @@ footer ul li a:hover {
   padding-top: 110px;
 }
 
+.rwd-table {
+  margin: 1em 0;
+  min-width: 300px;
+}
+.rwd-table tr {
+  border: 1px solid #c4c4c4;
+}
+.rwd-table tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.05);
+}
+.rwd-table th {
+  display: none;
+  border-right: 1px solid #c4c4c4;
+}
+.rwd-table td {
+  display: block;
+  border-right: 1px solid #c4c4c4;
+}
+.rwd-table td:first-child {
+  padding-top: 0.5em;
+}
+.rwd-table td:last-child {
+  padding-bottom: 0.5em;
+}
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 6.5em;
+  display: inline-block;
+}
+@media (min-width: 480px) {
+  .rwd-table td:before {
+    display: none;
+  }
+}
+.rwd-table th, .rwd-table td {
+  text-align: left;
+}
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    display: table-cell;
+    padding: 0.25em 0.5em;
+  }
+  .rwd-table th:first-child, .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .rwd-table th:last-child, .rwd-table td:last-child {
+    padding-right: 0;
+  }
+}
+
+.rwd-table {
+  background: #fff;
+  color: #212121;
+  overflow: hidden;
+}
+.rwd-table tr {
+  border-color: #c4c4c4;
+}
+.rwd-table th, .rwd-table td {
+  margin: 0.5em 1em;
+}
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    padding: 22px !important;
+  }
+}
+.rwd-table th, .rwd-table td:before {
+  color: #212121;
+}
+
+.status {
+  font-weight: 700;
+  color: #0167FF !important;
+}
+
+.slider {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+  margin: 1em auto;
+  border-radius: 16px;
+}
+
+.js .slider {
+  overflow: hidden;
+}
+
+.slider > ul {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  word-spacing: -0.3em;
+  white-space: nowrap;
+}
+
+.slider > ul > li {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+  font-size: 14px;
+  word-spacing: 0;
+  white-space: normal;
+}
+
+.slider > ul > .next:first-child {
+  left: 100%;
+}
+
+.slider > ul > .prev.last-child {
+  right: 100%;
+}
+
+.slider > ul > .target:first-child,
+.slider > ul > .target.last-child {
+  left: 0;
+  right: 0;
+}
+
+.slider > ul > li > img {
+  display: block;
+  width: 100%;
+}
+
+.slider .nav {
+  z-index: 1;
+  background: #fff;
+  text-align: center;
+  transition: opacity 2s;
+  opacity: 0;
+}
+
+.slider.ready .nav {
+  opacity: 1;
+}
+
+.slider .nav a {
+  display: inline-block;
+  margin: 1em 0.5em;
+  padding: 12px;
+  border: none;
+  width: 2em;
+  line-height: 2em;
+  background: #999;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 999px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.slider .nav a:hover {
+  background: #666;
+}
+
+.slider .nav a.active {
+  background: #000;
+}
+
+/* position nav items above slideshow with arrows on left/right side */
+.slider .nav > span {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
+
+.slider .nav > a {
+  position: absolute;
+  top: 50%;
+  margin-top: -21px;
+  font-size: 1.5em;
+}
+
+.slider .nav > .back {
+  left: 20px;
+}
+
+.slider .nav > .forth {
+  right: 20px;
+}
+
 d-flex {
   display: flex;
 }
