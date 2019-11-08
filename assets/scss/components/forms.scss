@@ -47,7 +47,7 @@
 		outline: none;
 		-webkit-appearance: none;
 		margin: 0;
-		padding: 0 $form-padding;
+		padding: $form-padding+4px $form-padding;
 		color: $form-color;
 		line-height: normal;
 		box-shadow: none;
@@ -118,7 +118,8 @@
 		bottom: 0;
 		width: $form-size-default;
 		pointer-events: none;
-		background: linear-gradient(180deg, #fff, #e8e8e8);
+		background: $white;
+		color: $grey;
 		border-radius: 0 $form-radius $form-radius 0;
 		border: 1px solid transparent;
 		background-clip: padding-box;
@@ -145,7 +146,7 @@
 		}
 
 		&:after {
-            font-family: "Font Awesome 5 Free"; 
+            font-family: FontAwesome; 
             font-weight: 900;
 			content: '/f0d7';
 			position: absolute;

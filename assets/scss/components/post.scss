@@ -58,3 +58,11 @@ ul.breadcrumb {
     text-decoration: underline;
   }
 
+.explain-block{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  p{
+    margin-left: 20px;
+  }
+}
