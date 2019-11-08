@@ -1,34 +1,35 @@
 
 header{
     justify-content: space-evenly;
-    margin-top:37px;
-    padding: 10px 0px;
-    position: fixed;
-    z-index: 1;
+    display: flex;
+    background-color: $white;
+    height: 75px;
+    align-items: center;
 }
 
-nav {
-    overflow: hidden;
+
+.navbar {
     background-color: $white;
     position: fixed;
-    display: inline-flex;
-    justify-content: space-evenly;
     top: 0;
     width: 100%;
     padding: 10px 0px;
-    ul {
-      text-align: center;
-      list-style-type: none;
-      list-style-type: none;
-      margin: 0;
-      padding: 15px;
-      li {
+    animation-name: showElement;
+    animation-direction: 1s;
+    z-index: 9999 ;
+}
+.nav-links{
+    text-align: center;
+    list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+  li {
         text-transform: uppercase;
         display: inline;
         font-size: 17px;
         font-weight: 700;
-
-        a {
+  a {
           color: $dark;
           text-decoration: none;
           padding: 14px;
@@ -44,12 +45,25 @@ nav {
               font-weight: 600;
           }
 
-        }
       }
     }
-  }
+}
+  
 
+
+@keyframes showElement{
+    0% {
+        opacity: 0;
+        top: -70px;
+    }
+    
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+} 
 .ticker{
     position: fixed;
     top:0px;
 }
+
