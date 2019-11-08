@@ -1,0 +1,157 @@
+
+
+.trailer {
+	margin-bottom: 20px;
+}
+
+%form-hidden {
+	position: fixed;
+	left: -9999px;
+	right: -9999pz;
+}
+
+.form {
+	$root: &;
+	
+	&__label {
+		margin-bottom: 10px;
+		display: inline-block;
+		vertical-align: top;
+
+		&[for] {
+			cursor: pointer;
+		}
+		
+		&--required {
+			&:after {
+				content: '*';
+				color: $form-color-error;
+				margin-left: 5px;
+			}
+		}
+	}
+	
+	&__wrap {
+		position: relative;
+	}
+
+	&__textarea,
+	&__select,
+	&__input {
+		border-radius: $form-radius;
+		display: block;
+		width: 100%;
+		height: $form-size-default;
+		background: $form-background;
+		border: 1px solid $form-border-color;
+		outline: none;
+		-webkit-appearance: none;
+		margin: 0;
+		padding: 0 $form-padding;
+		color: $form-color;
+		line-height: normal;
+		box-shadow: none;
+		overflow: hidden;
+		
+		&::placeholder {
+			color: #b8b8b8;
+		}
+
+		&:hover {
+			border-color: darken($form-border-color, 10%);
+		}
+
+		&:focus {
+			border-color: $form-border-color-focus;
+		}
+
+		&[disabled] {
+			background: $form-background-disabled;
+			border-color: $form-border-color-disabled;
+			cursor: default;
+		}
+
+		#{$root}--error & {
+			border-color: $form-border-color-error;
+			box-shadow: 0 0 0 1px $form-border-color-error inset
+		}
+	}
+	
+	&__select,
+	&__input {
+		&--small {
+			height: $form-size-small;
+		}
+	}
+	
+	&__input {
+		&--icon-left {
+			padding-left: $form-padding + $form-size-default;
+		}
+		
+		&--icon-right {
+			padding-right: $form-padding + $form-size-default;
+		}
+	}
+	
+	&__textarea {
+		resize: vertical;
+		padding: $form-padding;
+		height: $form-size-textarea;
+		overflow: auto;
+	}
+	
+	&__select {
+		&--not-selected {
+			color: #b8b8b8;
+		}
+		
+		option {
+			color: #474747;
+		}
+	}
+	
+	&__select-opener {
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: $form-size-default;
+		pointer-events: none;
+		background: linear-gradient(180deg, #fff, #e8e8e8);
+		border-radius: 0 $form-radius $form-radius 0;
+		border: 1px solid transparent;
+		background-clip: padding-box;
+		
+		#{$root}--error & {
+			border-width: 2px;
+		}
+		
+		#{$root}__select[disabled] + & {
+			background: transparent;
+		}
+
+		&:before {
+			border-left: 1px solid $form-border-color;
+			left: 0;
+			top: 0;
+			height: 100%;
+			content: '';
+			position: absolute;
+			
+			#{$root}__select[disabled] + & {
+				border-color: $form-border-color-disabled;
+			}
+		}
+
+		&:after {
+            font-family: "Font Awesome 5 Free"; 
+			content: '/f0d7';
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+		}
+	}
+}
