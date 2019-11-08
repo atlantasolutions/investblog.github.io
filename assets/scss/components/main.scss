@@ -36,3 +36,92 @@ a{
     background: transparentize($blue, .5);
     color: transparentize($blue, .2); 
 }
+
+.reklama__title{
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.reklama__title--left{
+    text-align: left;
+}
+
+.reklama--container{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.reklama__item{
+    display: flex;
+    align-items: center;
+}
+
+.reklama__item_desr{
+    max-width: 320px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 170%;
+    color: #000000;
+    margin-left: 20px;
+}
+
+.reklama__item_desr--last{
+    max-width: 420px;
+}
+
+.reklama__item_img{
+    width: 100px;
+}
+
+.reklama__item_desr--margin{
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.reklama__pay{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.reklama__pay--container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.reklama__pay_title{
+    padding: 0;
+    margin: 0;
+}
+.reklama__pay_desr{
+    padding: 0;
+    margin: 0;
+}
+
+.reklama__contact{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.reklama__contact_name{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 26px;
+    text-decoration-line: underline;
+    color: #0167FF;
+    margin-left: 20px;
+}
