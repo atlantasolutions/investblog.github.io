@@ -568,10 +568,8 @@ nav ul li a:active {
 }
 .form__select-opener:after {
   font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   content: "/f0d7";
-  width: 5px;
-  height: 5px;
-  background: #000;
   position: absolute;
   left: 50%;
   top: 50%;
