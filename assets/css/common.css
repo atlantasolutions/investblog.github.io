@@ -1165,7 +1165,11 @@ footer ul {
   .artiles-all--container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+
+  .btn-outline {
+    font-size: 12px;
+    padding: 12px 10px; } }
 .rwd-table {
   margin: 1em 0;
   min-width: 300px; }
