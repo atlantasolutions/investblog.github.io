@@ -28,6 +28,17 @@
 .btn-regular{
     background: $blue;
     color: $white;
+    max-width: 310px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: baseline;
+    transition: $transition-time;
     &:hover{
         background: $blue-hover;
     }

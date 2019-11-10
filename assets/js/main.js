@@ -6,3 +6,8 @@ window.onscroll = function showHeader() {
         header.classList.remove('navbar');
     }
 }
+
+$(".hamburger").click(function(){
+    $(".nav-links-mob").toggleClass("move");
+    $(this).toggleClass("close-menu"); // осталось только научить меню "уезжать" вправо.
+});

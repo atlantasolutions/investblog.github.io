@@ -53,9 +53,3 @@ $columns      : 12;
         margin-left: 2%;
     }
 }
-
-@media(max-width:768px){
-  div[class*="grid"]{
-    display: flex;
-  }
-}
